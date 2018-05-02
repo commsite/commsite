@@ -53,72 +53,92 @@
 				                    <form action="http://www.duvaux.ca/vincent/echo.php" method="post">
 				                        <div class="row1">
                                             <h4>Informations personnelles</h4>
-				                            <label for="prénom"><strong>Prénom</strong></label>
-				                             <input type="text" name="prénom" class="form-control" placeholder="Paul">
+
+																											<div class="row">
+																													<div class="col-md-4">
+																														<label for="prénom"><strong>Prénom</strong></label>
+																													 <input type="text" name="prénom" class="form-control" placeholder="Paul">
+																													</div>
+																													<div class="col-md-4">
+
+																		                            <label for="nom"><strong>Nom</strong></label>
+																													<input type="text" name="nom" class="form-control" placeholder="Morissette">
+																													</div>
+																													<div class="col-md-4">
+																														<label> <strong>Sexe</strong></label><br>
+																														<div class="row">
+																														<div class="col-md-6">
+																															<input type="radio" name="sexe" class="form-control" value="homme">Homme
+																														</div>
+																														<div class="col-md-6">
+																															<input type="radio" name="sexe" class="form-control" value="femme">Femme
+																															</div>
+																															</div>
+																													</div>
+																											</div>
+
 				                             <input type="hidden" name="a" value="paul.morissette@cegep-monpetit.qc.ca">
 				                        </div>
-				                        <div class="row2">
-				                            <label for="nom"><strong>Nom</strong></label>
-				                            <input type="text" name="nom" class="form-control" placeholder="Morissette">
-				                        </div>
+
 				                        <div class="row3">
 				                            <label for="email"><strong>Courriel</strong></label>
 				                            <input type="email" name="email" class="form-control" placeholder="exemple123@hotmail.com">
-				                        </div>
-                                        <div class="row4">
-				                            <label for="sexe"><strong>Sexe</strong></label><br>
-																		<label class="radio-inline">
-				                            		<input type="radio" name="sexe" class="form-control" value="homme">Homme
-																		</label>
-																		<label class="radio-inline">
-																				<input type="radio" name="sexe" class="form-control" value="femme">&nbsp;&nbsp;Femme
-																	</label>
 				                        </div>
                                         <div class="row5">
 				                            <label for="dateNaissance"><strong>Date de naissance</strong></label>
 				                            <input type="date" name="dateNaissance" class="form-control">
 				                        </div>
-                                        <div class="row6">
-				                            <label for="Adresse"><strong>Adresse</strong></label>
-				                            <input type="text" name="Adresse" class="form-control" placeholder="945 Chemin de Chambly">
-				                        </div>
-                                        <div class="row7">
-				                            <label for="codePostal"><strong>code postal</strong></label>
-				                            <input type="text" name="codePostal" class="form-control" placeholder="J4H 3M6">
-				                        </div>
-                                        <div class="row8">
-				                            <label for="ville"><strong>Ville</strong></label>
-				                            <input type="text" name="ville" class="form-control" placeholder="Longueuil">
-				                        </div>
-                                        <div class="row9">
-				                            <label for="province"><strong>Province</strong></label>
-				                            <input type="text" name="province" class="form-control" placeholder="Québec">
-				                        </div>
+
+<div class="row">
+	<div class="col-md-6">
+		<label for="Adresse"><strong>Adresse</strong></label>
+		<input type="text" name="Adresse" class="form-control" placeholder="945 Chemin de Chambly">
+	</div>
+	<div class="col-md-6">
+		<label for="codePostal"><strong>Code postal</strong></label>
+		<input type="text" name="codePostal" class="form-control" placeholder="J4H 3M6">
+	</div>
+</div>
+<br>
+
+<div class="row">
+	<div class="col-md-6">
+		<label for="ville"><strong>Ville</strong></label>
+		<input type="text" name="ville" class="form-control" placeholder="Longueuil">
+	</div>
+	<div class="col-md-6">
+		<label for="province"><strong>Province</strong></label>
+		<input type="text" name="province" class="form-control" placeholder="Québec">
+	</div>
+</div>
                                         <br>
                                         <br>
                                         <div class="row10">
-                                            <h4>Informations pour le payment</h4>
+                                            <h4>Informations pour le paiement</h4>
 				                            <label for="numeroDeCarte"><strong>Numéro de la carte</strong></label>
 				                            <input type="text" name="numeroDeCarte" class="form-control" maxlength="16" placeholder="1234 1234 1234 1234">
 				                        </div>
-                                        <div class="row11">
-				                            <label for="nomDuDétenteur"><strong>Nom du détenteur de la carte</strong></label>
-				                            <input type="text" name="nomDuDétenteur" class="form-control" placeholder="Paul Morissette">
-				                        </div>
-                                        <div class="row12">
-				                            <label for="dateExpiration"><strong>Date d'expiration de la carte</strong></label>
-				                            <input type="text" name="dateExpiration" class="form-control" maxlength="5" placeholder="00/00">
-				                        </div>
-                                        <div class="row13">
-				                            <label for="numéroDeSécurité"><strong>Numéro de sécurité de la carte</strong></label>
-				                            <input type="text" name="numéroDeSécurité" class="form-control" maxlength="3" placeholder="000">
-				                        </div>
+<br>
+<div class="row">
+<div class="col-md-4">
+	<label for="nomDuDétenteur"><strong>Nom du détenteur de la carte</strong></label>
+	<input type="text" name="nomDuDétenteur" class="form-control" placeholder="Paul Morissette">
+</div>
+<div class="col-md-4">
+	<label for="dateExpiration"><strong>Date d'expiration de la carte</strong></label>
+	<input type="text" name="dateExpiration" class="form-control" maxlength="5" placeholder="00/00">
+</div>
+	<div class="col-md-4">
+<label for="numéroDeSécurité"><strong>Numéro de sécurité de la carte</strong></label>
+<input type="text" name="numéroDeSécurité" class="form-control" maxlength="3" placeholder="000">
+	</div>
+</div>
 																<br><br><br>
 																				<div class="row14">
-				                            <label for="message"><strong>Commentaires ou Informations Supplémentaires</strong></label>
+				                            <label for="message"><strong>Commentaires ou informations supplémentaires</strong></label>
 				                            <textarea class="form-control" name="message" rows="7" cols="30"></textarea>
 				                        </div>
-				                            <button class="btn btn-primary btn-lg btn-block" style="width:70%;margin-top:20px;margin-left:auto; margin-right:auto;" type="submit">Envoyez</button>
+				                            <button class="btn btn-primary btn-lg btn-block" style="width:70%;margin-top:20px;margin-left:auto; margin-right:auto;" type="submit">Envoyer</button>
 				                    </form>
 				            </div>
 			<!--CONTENT-->
@@ -127,7 +147,7 @@
 <!--FOOTER BOTTOM-->
 		<footer class="footer">
 		<div class="container">
-			<strong>Commenditaires :&nbsp;&nbsp;&nbsp;&nbsp;</strong><a class="Commenditaires" href="https://www.google.com"><img style="width: 50px; max-height: 50px;" src="images/comm1.png" alt=""> </a>&nbsp;&nbsp;<a class="Commenditaires" href="https://www.google.com"><img style="width: 50px; max-height: 50px;" src="images/comm2.png" alt=""> </a> </a>&nbsp;&nbsp;<a class="Commenditaires" href="https://www.google.com"><img style="width: 50px; max-height: 50px;" src="images/comm3.png" alt=""> </a> </a>&nbsp;&nbsp;<a class="Commenditaires" href="https://www.google.com"><img style="width: 50px; max-height: 50px;" src="images/comm4.svg" alt=""> </a></a>&nbsp;&nbsp;</div>
+			<strong>Commanditaires :&nbsp;&nbsp;&nbsp;&nbsp;</strong><a class="Commenditaires" href="https://www.google.com"><img style="width: 50px; max-height: 50px;" src="images/comm1.png" alt=""> </a>&nbsp;&nbsp;<a class="Commenditaires" href="https://www.google.com"><img style="width: 50px; max-height: 50px;" src="images/comm2.png" alt=""> </a> </a>&nbsp;&nbsp;<a class="Commenditaires" href="https://www.google.com"><img style="width: 50px; max-height: 50px;" src="images/comm3.png" alt=""> </a> </a>&nbsp;&nbsp;<a class="Commenditaires" href="https://www.google.com"><img style="width: 50px; max-height: 50px;" src="images/comm4.svg" alt=""> </a></a>&nbsp;&nbsp;</div>
 				 </footer>
 		<!--NAVBAR-->
 		<script src="js/b.js"></script>
