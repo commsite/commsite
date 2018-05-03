@@ -1,5 +1,172 @@
-<!DOCTYPE html> <html> <head> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1"> <meta charset="utf-8"> <title> La montagne est à nous </title> <link rel="stylesheet" href="css/bootstrap.css"> <link rel="stylesheet" href="css/min.css"> <style media="screen"> </style> </head> <body style="background:#bfcac3;"> <!--NAVBAR TOP--> <div style="text-align:left;" class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary"> <div class="container"> <a class="navbar-brand" href="index.html"><strong>La montagne est à nous</strong></a> <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style=""> <span class="navbar-toggler-icon" deluminate_imagetype="unknown"></span> </button> <div class="navbar-collapse collapse navbar-right" id="navbarColor01"> <ul class="navbar-nav"> <li></li> <li class="nav-item"> <a class="nav-link" href="index.html">Accueil</a> </li> <li class="nav-item"> <a class="nav-link" href="equipe.html">Équipe</a> </li> <li class="nav-item"> <a class="nav-link" href="témoignages.html">Témoignages</a> </li> <li class="nav-item"> <a class="nav-link" href="activités.html">Activités</a> </li> <li class="nav-item"> <a class="nav-link" href="Contact.html">Contact</a> </li> </ul> </div> </div> </div> <!--NAVBAR--> <div class="container" role="main" style="padding-bottom:60px;"> <div class="jumbotron" style="padding-bottom:20px;padding-top:120px;"> <!--CONTENT--> <div class="contacter"> <h1>Inscription</h1> <form action="http://www.duvaux.ca/vincent/echo.php" method="post"> <h4>Veuillez spécifier pour qu'elle activité vous voulez vous inscrire</h4> <label for="nomactivite"><strong>Activité</strong></label> <input type="text" name="nomactivite" class="form-control" placeholder="Expédition en Alaska"> <div class="row1"> <br><br> <h4>Informations personnelles</h4> <div class="row"> <div class="col-md-4"> <label for="prénom"><strong>Prénom</strong></label> <input type="text" name="prénom" class="form-control" placeholder="Paul"> </div> <div class="col-md-4"> <label for="nom"><strong>Nom</strong></label> <input type="text" name="nom" class="form-control" placeholder="Morissette"> </div> <div class="col-md-4"> <label> <strong>Sexe</strong></label><br> <div class="row"> <div class="col-md-6"> Homme<input type="radio" name="sexe" class="form-control" value="homme"> </div> <div class="col-md-6"> Femme<input type="radio" name="sexe" class="form-control" value="femme"> </div> </div> </div> </div> <input type="hidden" name="a" value="
+<!DOCTYPE html>
+ <html>
+ <head>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta charset="utf-8">
+ <title> La montagne est à nous </title>
+ <link rel="stylesheet" href="css/bootstrap.css">
+ <link rel="stylesheet" href="css/min.css">
+ <style media="screen">
+ </style>
+ </head>
+ <body style="background:#bfcac3;">
+ <!--NAVBAR TOP-->
+ <div style="text-align:left;" class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+ <div class="container">
+ <div style="font-size:1.3rem; color:#fff; margin-right:32px;"><strong>La montagne est à nous</strong></div><button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
+ <span class="navbar-toggler-icon" deluminate_imagetype="unknown"></span>
+ </button>
+ <div class="navbar-collapse collapse navbar-right" id="navbarColor01">
+ <ul class="navbar-nav">
+ <li></li>
+ <li class="nav-item">
+ <a class="nav-link" href="index.html">Accueil</a>
+ </li>
+ <li class="nav-item">
+ <a class="nav-link" href="equipe.html">Équipe</a>
+ </li>
+ <li class="nav-item">
+ <a class="nav-link" href="témoignages.html">Témoignages</a>
+ </li>
+ <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="saison">Activités <span class="caret"></span></a>
+             <div class="dropdown-menu" aria-labelledby="saison">
+               <a class="dropdown-item" href="activité4.html">Automne 2018</a>
+               <a class="dropdown-item" href="activité3.html">Été 2018</a>
+               <a class="dropdown-item" href="activité2.html">Printemps 2018</a>
+               <a class="dropdown-item" href="activité1.html">Hiver 2017</a>
+             </div>
+           </li>
+ <li class="nav-item">
+ <a class="nav-link" href="Contact.html">Contact</a>
+ </li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ <!--NAVBAR-->
+ <div class="container" role="main" style="padding-bottom:60px;">
+ <div class="jumbotron" style="padding-bottom:20px;padding-top:120px;">
+ <!--CONTENT-->
+ <div class="contacter">
+ <h1>Inscription</h1>
+ <form action="http://www.duvaux.ca/vincent/echo.php" method="post">
+ <h4>Veuillez spécifier pour qu'elle activité vous voulez vous inscrire</h4>
+ <div class="form-group">
+      <label for="exampleSelect1"><strong>Choix d'activité</strong></label>
+      <select class="form-control" id="exampleSelect1">
+        <option>option 1</option>
+        <option>option 2</option>
+        <option>option 3</option>
+        <option>option 4</option>
+        <option>option 5</option>
+      </select>
+    </div>
+ <div class="row1">
+ <br><br>
+ <h4>Informations personnelles</h4>
+ <div class="row">
+ <div class="col-md-4">
+ <label for="prénom"><strong>Prénom</strong></label>
+ <input type="text" name="prénom" class="form-control" placeholder="Paul">
+ </div>
+ <div class="col-md-4">
+ <label for="nom"><strong>Nom</strong></label>
+ <input type="text" name="nom" class="form-control" placeholder="Morissette">
+ </div>
+ <div class="col-md-4">
+ <label>
+ <strong>Sexe</strong></label><br>
+ <div class="row">
+ <div class="col-md-6"> Homme<input type="radio" name="sexe" class="form-control" value="homme">
+ </div>
+ <div class="col-md-6"> Femme<input type="radio" name="sexe" class="form-control" value="femme">
+ </div>
+ </div>
+ </div>
+ </div>
+ <input type="hidden" name="a" value="
 
 paul.morissette@cegep-monpetit.qc.ca
 
-"> </div> <div class="row3"> <label for="email"><strong>Courriel</strong></label> <input type="email" name="email" class="form-control" placeholder="exemple123@hotmail.com"> </div> <div class="row5"> <label for="dateNaissance"><strong>Date de naissance</strong></label> <input type="date" name="dateNaissance" class="form-control"> </div> <div class="row"> <div class="col-md-6"> <label for="Adresse"><strong>Adresse</strong></label> <input type="text" name="Adresse" class="form-control" placeholder="945 Chemin de Chambly"> </div> <div class="col-md-6"> <label for="codePostal"><strong>Code postal</strong></label> <input type="text" name="codePostal" class="form-control" placeholder="J4H 3M6"> </div> </div> <br> <div class="row"> <div class="col-md-6"> <label for="ville"><strong>Ville</strong></label> <input type="text" name="ville" class="form-control" placeholder="Longueuil"> </div> <div class="col-md-6"> <label for="province"><strong>Province</strong></label> <input type="text" name="province" class="form-control" placeholder="Québec"> </div> </div> <br> <br> <div class="row10"> <h4>Informations pour le paiement</h4> <label for="numeroDeCarte"><strong>Numéro de la carte</strong></label> <input type="text" name="numeroDeCarte" class="form-control" maxlength="16" placeholder="1234 1234 1234 1234"> </div> <br> <div class="row"> <div class="col-md-4"> <label for="nomDuDétenteur"><strong>Nom du détenteur de la carte</strong></label> <input type="text" name="nomDuDétenteur" class="form-control" placeholder="Paul Morissette"> </div> <div class="col-md-4"> <label for="dateExpiration"><strong>Date d'expiration de la carte</strong></label> <input type="text" name="dateExpiration" class="form-control" maxlength="5" placeholder="00/00"> </div> <div class="col-md-4"> <label for="numéroDeSécurité"><strong>Numéro de sécurité de la carte</strong></label> <input type="text" name="numéroDeSécurité" class="form-control" maxlength="3" placeholder="000"> </div> </div> <br><br><br> <div class="row14"> <label for="message"><strong>Commentaires ou informations supplémentaires</strong></label> <textarea class="form-control" name="message" rows="7" cols="30" placeholder="Vous êtes plus qu'une personne? Inscrivez les autres ici!"></textarea> </div> <button class="btn btn-primary btn-lg btn-block" style="width:70%;margin-top:20px;margin-left:auto; margin-right:auto;" type="submit">Envoyer</button> </form> </div> <!--CONTENT--> </div> </div> <!--FOOTER BOTTOM--> <footer class="footer"> <div class="container"> <strong>Commanditaires :&nbsp;&nbsp;&nbsp;&nbsp;</strong><a class="Commenditaires" href="https://www.google.com"><img style="width: 50px; max-height: 50px;" src="images/comm1.png" alt=""> </a>&nbsp;&nbsp;<a class="Commenditaires" href="https://www.google.com"><img style="width: 50px; max-height: 50px;" src="images/comm2.png" alt=""> </a> </a>&nbsp;&nbsp;<a class="Commenditaires" href="https://www.google.com"><img style="width: 50px; max-height: 50px;" src="images/comm3.png" alt=""> </a> </a>&nbsp;&nbsp;<a class="Commenditaires" href="https://www.google.com"><img style="width: 50px; max-height: 50px;" src="images/comm4.svg" alt=""> </a></a>&nbsp;&nbsp;</div> </footer> <!--NAVBAR--> <script src="js/b.js"></script> <script src="js/a.js"></script> </body> </html>
+">
+ </div>
+ <div class="row3">
+ <label for="email"><strong>Courriel</strong></label>
+ <input type="email" name="email" class="form-control" placeholder="exemple123@hotmail.com">
+ </div>
+ <div class="row5">
+ <label for="dateNaissance"><strong>Date de naissance</strong></label>
+ <input type="date" name="dateNaissance" class="form-control">
+ </div>
+ <div class="row">
+ <div class="col-md-6">
+ <label for="Adresse"><strong>Adresse</strong></label>
+ <input type="text" name="Adresse" class="form-control" placeholder="945 Chemin de Chambly">
+ </div>
+ <div class="col-md-6">
+ <label for="codePostal"><strong>Code postal</strong></label>
+ <input type="text" name="codePostal" class="form-control" placeholder="J4H 3M6">
+ </div>
+ </div>
+ <br>
+ <div class="row">
+ <div class="col-md-6">
+ <label for="ville"><strong>Ville</strong></label>
+ <input type="text" name="ville" class="form-control" placeholder="Longueuil">
+ </div>
+ <div class="col-md-6">
+ <label for="province"><strong>Province</strong></label>
+ <input type="text" name="province" class="form-control" placeholder="Québec">
+ </div>
+ </div>
+ <br>
+ <br>
+ <div class="row10">
+ <h4>Informations pour le paiement</h4>
+ <label for="numeroDeCarte"><strong>Numéro de la carte</strong></label>
+ <input type="text" name="numeroDeCarte" class="form-control" maxlength="16" placeholder="1234 1234 1234 1234">
+ </div>
+ <br>
+ <div class="row">
+ <div class="col-md-4">
+ <label for="nomDuDétenteur"><strong>Nom du détenteur de la carte</strong></label>
+ <input type="text" name="nomDuDétenteur" class="form-control" placeholder="Paul Morissette">
+ </div>
+ <div class="col-md-4">
+ <label for="dateExpiration"><strong>Date d'expiration de la carte</strong></label>
+ <input type="text" name="dateExpiration" class="form-control" maxlength="5" placeholder="00/00">
+ </div>
+ <div class="col-md-4">
+ <label for="numéroDeSécurité"><strong>Numéro de sécurité de la carte</strong></label>
+ <input type="text" name="numéroDeSécurité" class="form-control" maxlength="3" placeholder="000">
+ </div>
+ </div>
+ <br><br><br>
+ <div class="row14">
+ <label for="message"><strong>Commentaires ou informations supplémentaires</strong></label>
+ <textarea class="form-control" name="message" rows="7" cols="30" placeholder="Vous êtes plus qu'une personne? Inscrivez les autres ici!"></textarea>
+ </div>
+ <button class="btn btn-primary btn-lg btn-block" style="width:70%;margin-top:20px;margin-left:auto; margin-right:auto;" type="submit">Envoyer</button>
+ </form>
+ </div>
+ <!--CONTENT-->
+ </div>
+ </div>
+ <!--FOOTER BOTTOM-->
+<footer class="footer">
+<div class="container">
+<a href="https://www.google.com"><img style="width: 80px; max-height: 65px;height : 80%;" src="images/comm1.png" alt="">
+</a>&nbsp;&nbsp;<a href="https://www.google.com"><img style="width: 80px; max-height: 65px;height : 80%;" src="images/comm2.png" alt=""  >
+</a>
+</a>&nbsp;&nbsp;<a href="https://www.google.com"><img style="width: 80px; max-height: 65px;height : 80%;" src="images/comm3.png" alt=""  >
+</a>
+</a>&nbsp;&nbsp;<a href="https://www.google.com"><img style="width: 80px; max-height: 65px;height : 80%;" src="images/comm4.svg" alt=""  >
+</a></a>&nbsp;&nbsp;</div>
+</footer>
+<!--NAVBAR-->
+<script src="js/b.js"></script>
+<script src="js/a.js"></script>
+</body>
+</html>
