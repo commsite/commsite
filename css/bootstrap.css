@@ -683,7 +683,6 @@ pre code {
   top: -25px;
   margin-bottom: -25px;
 }
-
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -726,7 +725,7 @@ pre code {
   .fleche
   {
     font-size:28pt;
-  }
+}
 }
 
 @media (min-width: 1200px) {
@@ -6125,7 +6124,7 @@ button.close {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  max-width: 100%;
   -webkit-transition: -webkit-transform 0.6s ease;
   transition: -webkit-transform 0.6s ease;
   -o-transition: -o-transform 0.6s ease;
